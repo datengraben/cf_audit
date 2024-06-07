@@ -41,7 +41,6 @@ def update_features(project, features, audit):
             feat = ref2feat[ref]
             if feat.feature_md5 != md5_hex:
                 update = True
-            update = False
         else:
             feat = Feature(project=project, ref=ref)
             feat.validates_count = 0
